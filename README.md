@@ -1,2 +1,237 @@
-# Resume-Jayesh
-This is my Resume.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayesh Sutar</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0e0e0e;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 30px 20px;
+            text-align: center;
+            color: #03a9f4;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #cccccc;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-info li i {
+            color: #03a9f4;
+        }
+
+        .contact-info a {
+            color: #03a9f4;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .left-column,
+        .right-column {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        h2 {
+            border-bottom: 2px solid #03a9f4;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .experience-item,
+        .education-item,
+        .project-item,
+        .skills-item,
+        .certification-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3,
+        .education-item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #03a9f4;
+        }
+
+        .experience-item p,
+        .education-item p,
+        .project-item p {
+            margin: 5px 0;
+            color: #cccccc;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .left-column,
+            .right-column {
+                flex: 1;
+                min-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Jayesh Sutar</h1>
+        <p>Software Engineer | Strong in Backend Logic, Data Handling & Real-World Project Development</p>
+        <div class="contact-info">
+            <ul>
+                <li><i class="fas fa-phone-alt"></i> +91-7387885582</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:jayeshsutar312@gmail.com">jayeshsutar312@gmail.com</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="#">LinkedIn</a></li>
+                <li><i class="fab fa-github"></i> <a href="#">GitHub</a></li>
+                <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-column">
+            <section id="career-objective">
+                <h2>Career Objective</h2>
+                <p>Final-Year B.Tech IT student with hands-on experience in Python, SQL, Django & Git. Built real-world projects including a chatbot, gesture-based security GUI, and Java-based game pack. Strong foundation in data handling, backend logic, and collaborative development.</p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>B.Tech IT</h3>
+                    <p><strong>St. John College of Engineering & Management</strong></p>
+                    <p>Nov 2022 – Present</p>
+                    <p>CGPA: 7.4/10</p>
+                </div>
+            </section>
+
+            <section id="internships">
+                <h2>Internships</h2>
+                <div class="experience-item">
+                    <h3>Java Developer Intern</h3>
+                    <p><strong>INTERNPE</strong> | Remote/India | Jun 2024 – Jun 2024</p>
+                    <ul>
+                        <li>Applied OOP concepts like Inheritance, Encapsulation and Event-Driven Logic</li>
+                        <li>Implemented win/loss logic, replay functionality and User Interaction flow</li>
+                        <li>Used Git for version control and hosted source code on GitHub</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-column">
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3><strong>F.R.I.D.A.Y Chatbot</strong></h3>
+                    <p>Initially built in C (2021), upgraded in 2025 using Python & Django to build an interactive web chatbot.</p>
+                </div>
+                <div class="project-item">
+                    <h3><strong>Java Game Pack</strong></h3>
+                    <p>Developed games like number guess, X & 0, and tic tac toe using event-driven programming. Implemented logic for winning states, number generation, and replayability.</p>
+                </div>
+                <div class="project-item">
+                    <h3><strong>GESTURE-GATE</strong></h3>
+                    <p>Palm-recognition based security system enabling real-time unlocking with encryption and gesture detection using Python (May 2025).</p>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Machine Learning – Simplilearn (2024)</li>
+                    <li>Foundations of Augmented Reality – Coursera by Meta (2024)</li>
+                    <li>Python GUI and Basic – Great Learning (2023)</li>
+                    <li>Algorithms Part 1 – Princeton University (Ongoing)</li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Technical:</strong> Python, Java, JavaScript, SQL, C</li>
+                    <li><strong>Employability:</strong> Problem Solving, Teamwork, Adaptability</li>
+                    <li><strong>Tools & Tech:</strong> Git, WEKA, ORANGE, Jupyter Notebook, Django</li>
+                    <li><strong>Creative Tools:</strong> Adobe Photoshop, Adobe Lightroom, Picsart</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>©2025 Jayesh Sutar. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
